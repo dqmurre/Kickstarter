@@ -1,0 +1,138 @@
+.menu {
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+
+  &__top {
+    align-items: center;
+    margin: 0;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+
+    @include on-tablet {
+      padding: 25px;
+    }
+  }
+
+  &-logo {
+    cursor: pointer;
+    background-image: url(../images/Vector.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 161px;
+    height: 26px;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__wrapper {
+    margin: 0;
+    padding: 30px;
+
+    @include on-tablet {
+      padding: 40px;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 50px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    @include on-tablet {
+      display: none;
+    }
+  }
+
+  &-specs {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #4f4f4f;
+    text-decoration: none;
+  }
+
+  &-english {
+    cursor: pointer;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @include on-desktop {
+      line-height: 20px;
+    }
+  }
+
+  &-ukrainian {
+    cursor: pointer;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: #828282;
+    text-decoration: none;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @include on-desktop {
+      line-height: 20px;
+    }
+  }
+
+  &__button {
+    position: fixed;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    cursor: pointer;
+    height: 48px;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+      background-color: #131313;
+    }
+
+    &:disabled {
+      background-color: #d0d0d0;
+    }
+
+    @include on-tablet {
+      display: none;
+    }
+  }
+}

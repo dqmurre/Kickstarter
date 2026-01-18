@@ -1,0 +1,149 @@
+.top-bar {
+  padding: 22px 30px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include on-tablet {
+    padding: 29px 34px 130px;
+  }
+
+  @include on-desktop {
+    padding: 30px 0 90px;
+  }
+
+  &-logo {
+    cursor: pointer;
+    background-image: url(../images/Vector.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 161px;
+    height: 26px;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+    @include on-desktop {
+      gap: 0;
+    }
+  }
+
+  &__language {
+    display: none;
+
+    @include on-tablet {
+      display: flex;
+    }
+
+    @include on-desktop {
+      margin-left: 30px;
+    }
+  }
+
+  &-english {
+    cursor: pointer;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @include on-desktop {
+      line-height: 20px;
+    }
+  }
+
+  &-ukrainian {
+    cursor: pointer;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: #828282;
+    text-decoration: none;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @include on-desktop {
+      line-height: 20px;
+    }
+  }
+
+  &__button {
+    display: none;
+    margin: 0;
+    padding: 0;
+
+    @include on-tablet {
+      background-color: #333;
+      color: #fff;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+      text-transform: uppercase;
+
+      display: block;
+      cursor: pointer;
+      width: 100px;
+      height: 48px;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+        background-color: #131313;
+      }
+
+      &:disabled {
+        background-color: #d0d0d0;
+      }
+
+      @include on-desktop {
+        width: 102px;
+        margin-left: 47px;
+      }
+    }
+  }
+
+  &-specs {
+    display: none;
+
+    @include on-tablet {
+      display: block;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-decoration: none;
+      color: #4f4f4f;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

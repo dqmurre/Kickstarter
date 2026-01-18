@@ -1,0 +1,233 @@
+.questions {
+  margin: 0 30px 20px;
+
+  @include on-tablet {
+    margin: 0 34px 30px;
+  }
+
+  @include on-desktop {
+    margin: 0 0 30px;
+  }
+
+  &__container {
+    margin-bottom: 110px;
+
+    @include on-tablet {
+      display: flex;
+      gap: 21px;
+    }
+
+    @include on-desktop {
+      margin-bottom: 170px;
+      gap: 28px;
+    }
+  }
+
+  &__title {
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin: 0 0 27px;
+
+    @include on-tablet {
+      font-size: 36px;
+      line-height: 46px;
+      margin: 0;
+    }
+
+    @include on-desktop {
+      font-size: 56px;
+      line-height: 70px;
+    }
+  }
+
+  &__form {
+    @include on-tablet {
+      width: 340px;
+    }
+
+    @include on-desktop {
+      width: 582px;
+    }
+
+    &--input {
+      width: 100%;
+      height: 48px;
+      padding: 12px 0 12px 20px;
+      margin-bottom: 20px;
+      border: 1px solid #828282;
+      box-sizing: border-box;
+      outline: none;
+
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 16px;
+      line-height: 24px;
+
+      &::placeholder {
+        color: #bdbdbd;
+      }
+
+      &:focus {
+        border-color: #0c797a;
+      }
+
+      &:valid {
+        border-color: #eb5757;
+      }
+    }
+
+    &--message {
+      box-sizing: border-box;
+      outline: none;
+      width: 100%;
+      height: 128px;
+      resize: none;
+      padding: 12px 20px;
+      margin-bottom: 30px;
+      border: 1px solid #828282;
+
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+
+      &::placeholder {
+        color: #bdbdbd;
+      }
+
+      &:focus {
+        border-color: #0c797a;
+      }
+
+      @include on-tablet {
+        height: 201px;
+      }
+    }
+
+    &--button {
+      width: 102px;
+      height: 40px;
+      background-color: #0db2b3;
+      border: none;
+
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 12px;
+      line-height: 14px;
+      color: #fff;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+        background-color: #0c797a;
+      }
+
+      &:disabled {
+        background-color: #cfeff0;
+      }
+
+      @include on-desktop {
+        width: 124px;
+        height: 48px;
+      }
+    }
+  }
+
+  &__bottom {
+    align-items: center;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    @include on-tablet {
+      width: 50px;
+      height: 50px;
+    }
+
+    @include on-desktop {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__logo {
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @include on-tablet {
+      background-image: url(../images/Vector.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 184px;
+      height: 25px;
+      margin-bottom: 60px;
+    }
+
+    @include on-desktop {
+      width: 161px;
+      height: 26px;
+    }
+  }
+
+  &__arrow {
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @include on-tablet {
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/icons/group.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    @include on-desktop {
+      height: 24px;
+      width: 24px;
+      background-image: url(../images/arrowdesk.png);
+    }
+  }
+
+  &__icons {
+    margin: 0 54px 30px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+
+    @include on-tablet {
+      gap: 49px;
+    }
+
+    @include on-desktop {
+      gap: 40px;
+    }
+  }
+
+  &__text {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #bdbdbd;
+    margin: 0;
+  }
+}

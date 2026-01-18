@@ -1,0 +1,11 @@
+.main {
+  margin: 110px 0;
+
+  @include on-tablet {
+    margin: 140px 0;
+  }
+
+  @include on-desktop {
+    margin: 170px 0;
+  }
+}

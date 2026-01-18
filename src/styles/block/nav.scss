@@ -1,0 +1,66 @@
+.nav {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    @include on-tablet {
+      gap: 40px;
+    }
+
+    @include on-desktop {
+      flex-direction: row;
+      gap: 84px;
+      padding: 28px;
+    }
+  }
+
+  &__story {
+    font-weight: 700;
+    color: #131313;
+    font-family: Inter, sans-serif;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @include on-tablet {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+
+  &__link {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @include on-tablet {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+}
