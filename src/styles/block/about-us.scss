@@ -364,6 +364,7 @@
     margin: 0;
     z-index: 1;
     position: relative;
+    color: #333;
 
     @include on-tablet {
       font-size: 24px;
