@@ -18,29 +18,6 @@
     }
   }
 
-  &__story {
-    font-weight: 700;
-    color: #131313;
-    font-family: Inter, sans-serif;
-    font-style: Bold;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: transform 0.3s;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-
-    @include on-tablet {
-      font-size: 22px;
-      line-height: 28px;
-    }
-  }
-
   &__link {
     font-family: Inter, sans-serif;
     font-weight: 400;
@@ -56,11 +33,9 @@
 
     &:hover {
       transform: scale(1.1);
-    }
-
-    @include on-tablet {
-      font-size: 22px;
-      line-height: 28px;
+      font-weight: 700;
+      font-style: Bold;
+      color: #131313;
     }
   }
 }

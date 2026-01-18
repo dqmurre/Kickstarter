@@ -104,6 +104,10 @@
         border-color: #0c797a;
       }
 
+      &:valid {
+        border-color: #eb5757;
+      }
+
       @include on-tablet {
         height: 201px;
       }
